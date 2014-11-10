@@ -1,9 +1,2 @@
-require "capistrano/librarian/puppet/version"
-
-module Capistrano
-  module Librarian
-    module Puppet
-      # Your code goes here...
-    end
-  end
-end
+require "capistrano/deploy"
+load File.expand_path("../tasks/librarian_puppet.rake")
